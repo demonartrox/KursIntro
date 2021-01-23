@@ -14,7 +14,7 @@ namespace Donguler
 
             string[] kurslar = new string[] { "Yazılım Geliştiricisi Yetiştirme Kampı", "Programlamaya başlangıç için temel kurs", "Java", "Python", "C#" };
 
-            for (int i = 0; i<kurslar.Length; i++)
+            for (int i = 0; i < kurslar.Length; i++)
             {
                 Console.WriteLine(kurslar[i]);
             }

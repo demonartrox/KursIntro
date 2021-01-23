@@ -18,7 +18,7 @@ namespace Metotlar
             urun2.Fiyati = 80;
             urun2.Aciklama = "Diyarbakır karpuzu";
 
-            Urun[] urunler = new Urun[] {urun1, urun2 };
+            Urun[] urunler = new Urun[] { urun1, urun2 };
 
 
             foreach (var urun in urunler)

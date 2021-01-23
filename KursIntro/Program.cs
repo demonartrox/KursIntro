@@ -13,11 +13,11 @@ namespace KursIntro
             double dolarDun = 7.35;
             double dolarBugun = 7.45;
 
-            if (dolarDun>dolarBugun)
+            if (dolarDun > dolarBugun)
             {
                 Console.WriteLine("Azalış butonu");
             }
-            else if (dolarDun<dolarBugun)
+            else if (dolarDun < dolarBugun)
             {
                 Console.WriteLine("Artış butonu");
             }

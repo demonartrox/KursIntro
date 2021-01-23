@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP3
 {
-    interface IKrediManager 
+    interface IKrediManager
     {
         void Hesapla();
         void BiseyYap();

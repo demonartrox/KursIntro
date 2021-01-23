@@ -8,10 +8,11 @@ namespace Oop2
     class MusteriManager //class içerisinde özelik ve operasyon tutar. birinin olduğu yerde diğeri olmaz.
                          //bir nesnede bir değer kullanılmak zorunda değilse orada soyutlama hatası vardır.
     {
-        public void Ekle (Musteri musteri)
+        public void Ekle(Musteri musteri)
         {
-        //    if (musteri.)
+            //    if (musteri.)
 
-        //}
+            //}
+        }
     }
 }
