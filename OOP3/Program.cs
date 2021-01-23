@@ -25,15 +25,18 @@ namespace OOP3
             IKrediManager ihtiyacKrediManager = new IhtiyacKrediManager();
             IKrediManager tasitKrediManager = new TasitKrediManager();
             IKrediManager konutKrediManager = new KonutKrediManager();
+            IKrediManager esnafKrediManager = new EsnafKredisiManager();
 
-            ILoggerService databaseloggerService = new DatabaseLoggerService();
-            ILoggerService fileloggerService = new FileLoggerService();
+
+            ILoggerService databaseLoggerService = new DatabaseLoggerService();
+            ILoggerService fileLoggerService = new FileLoggerService();
+            ILoggerService ssmsLoggerService = new SmsLoggerService();
 
             //burada ayrı ayrı çağırırsan ayrı ayrı hesaplandığını göreceksin.
             //basvuru manager de bulunan hesapla fonksiyonu, oraya hangi kredi tipini gönderirsen onu hesaplar.
             BasvuruManager basvuruManager = new BasvuruManager();
             //basvuruManager.BasvuruYap(ihtiyacKrediManager);
-            basvuruManager.BasvuruYap(konutKrediManager, FileLoggerService);
+            basvuruManager.BasvuruYap(tasitKrediManager, databaseLoggerService);
             //basvuruManager.BasvuruYap(tasitKrediManager);
 
             List<IKrediManager> krediler = new List<IKrediManager>() {ihtiyacKrediManager, tasitKrediManager };
